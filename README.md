@@ -23,16 +23,16 @@ bot.getBot();
 
 ```json
 {
-    "ok": true,
-    "result": {
-        "id": xxxx,
-        "is_bot": true,
-        "first_name": "First_Name",
-        "username": "username",
-        "can_join_groups": true,
-        "can_read_all_group_messages": false,
-        "supports_inline_queries": false
-    }
+  "ok": true,
+  "result": {
+    "id": "xxxx",
+    "is_bot": true,
+    "first_name": "First_Name",
+    "username": "username",
+    "can_join_groups": true,
+    "can_read_all_group_messages": false,
+    "supports_inline_queries": false
+  }
 }
 ```
 
