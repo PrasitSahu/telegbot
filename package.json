@@ -1,0 +1,14 @@
+{
+  "name": "telegbot",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "telegrambot",
+    "telegbot",
+    "bot"
+  ],
+  "author": "",
+  "license": "ISC"
+}
