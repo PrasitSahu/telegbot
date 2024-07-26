@@ -1,14 +1,37 @@
 {
   "name": "telegbot",
   "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {},
+  "description": "Telegram bot API wrapper",
+  "main": "./dist/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "cls && tsc && jest --watchAll --no-cache --detectOpenHandles",
+    "transpile": "tsc && rollup ./dist/index.js --file ./dist/index.cjs --format cjs",
+    "git-add-all": "cls && npm run transpile && git add ."
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
+    }
+  },
   "keywords": [
     "telegrambot",
     "telegbot",
     "bot"
   ],
-  "author": "",
-  "license": "ISC"
+  "author": "Prasit Sahu",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.11",
+    "dotenv": "^16.4.5",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.3",
+    "typescript": "^5.5.4"
+  }
 }
